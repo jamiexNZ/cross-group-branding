@@ -1,0 +1,37 @@
+Use the Cross Group workspace knowledge and approved uploaded brand assets for this project.
+
+PROJECT
+[Describe what the application does in one or two sentences.]
+
+USERS
+- Primary user: [Who will use it most?]
+- Secondary user: [Who else needs access?]
+
+COMMERCIAL PURPOSE
+[Describe the business problem, the cost or frustration it creates, and the improvement this application should produce.]
+
+KEY USER JOURNEY
+1. [What does the user do first?]
+2. [What information do they enter or review?]
+3. [What result or decision do they reach?]
+
+FIRST RELEASE
+- Include: [List only the essential functions.]
+- Exclude: [List anything that should wait.]
+- Data storage: [None, Lovable Cloud, or an approved client-owned backend.]
+- Authentication: [None, email login, Microsoft login, or another approved method.]
+
+DESIGN
+- Follow the Cross Group workspace brand rules.
+- Use the approved uploaded Cross Group logo. Do not recreate or alter it.
+- The interface should feel practical, modern, trustworthy and commercially useful.
+- Use realistic New Zealand examples and New Zealand/British English.
+- Avoid generic technology start-up styling, gradients and decorative clutter.
+
+BUILD APPROACH
+- Begin in Plan mode.
+- Do not write code yet.
+- Ask focused questions about missing requirements, permissions, calculations, data sensitivity and edge cases.
+- Then produce a clear implementation plan covering screens, components, data, calculations, security, testing and publishing.
+- Wait for approval before moving to Build mode.
+

@@ -1,0 +1,46 @@
+{
+  "brand": {
+    "name": "Cross Group",
+    "positioning": "Not your usual accountants",
+    "locale": "en-NZ"
+  },
+  "colours": {
+    "navy": "#001641",
+    "rust": "#D75532",
+    "white": "#FFFFFF",
+    "background": "#F7F8FA",
+    "surface": "#FFFFFF",
+    "border": "#D9DEE7",
+    "text": "#001641",
+    "textMuted": "#5B6472",
+    "focus": "#7F9BCB",
+    "success": "#2F6B4F",
+    "warning": "#8A5A00",
+    "error": "#A52828"
+  },
+  "typography": {
+    "preferredFamily": "Sinkin Sans",
+    "fallbackStack": "Verdana, Geneva, sans-serif",
+    "headingMainWeight": 700,
+    "headingWeight": 500,
+    "bodyWeight": 400
+  },
+  "shape": {
+    "radiusSmall": "6px",
+    "radiusMedium": "10px",
+    "radiusLarge": "16px"
+  },
+  "layout": {
+    "spacingBase": "8px",
+    "maximumContentWidth": "1200px",
+    "minimumTouchTarget": "44px"
+  },
+  "rules": {
+    "primaryButton": "Navy background with white text",
+    "rustUsage": "Accent only; do not use for ordinary-sized text on white",
+    "logo": "Use approved asset and never stretch, recolour, crop, distort or recreate",
+    "style": "Clean, practical, modern and restrained",
+    "language": "New Zealand/British English"
+  }
+}
+

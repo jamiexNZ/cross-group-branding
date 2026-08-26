@@ -1,0 +1,99 @@
+CROSS GROUP BRAND AND BUILD RULES
+
+Brand character
+- Cross Group is a New Zealand accounting and business advisory firm.
+- Position the firm as practical, commercially aware, technology-forward and human.
+- The brand idea is "Not your usual accountants".
+- Interfaces must feel trustworthy and capable without looking conservative, cold or corporate.
+- Prefer useful clarity over decoration.
+
+Writing and interface copy
+- Use New Zealand/British English spelling.
+- Write in a conversational, practical, direct and upbeat way.
+- Use plain language and short sentences.
+- Be warm and confident, but never gushy or over-polished.
+- Use sentence case for headings, labels and buttons.
+- Use real, useful content. Never use lorem ipsum.
+- Prefer active button labels such as "Calculate savings", "Add a job", "Review details" and "Send to adviser".
+- Explain financial or technical concepts in everyday language.
+- Avoid corporate jargon, hype, vague AI claims and unnecessary exclamation marks.
+- Do not begin messages with "I hope this finds you well" or similar wording.
+
+Core colours
+- Cross Group Navy: #001641. Use as the dominant brand colour for navigation, headings, primary buttons, footer areas and strong structure.
+- Cross Group Rust: #D75532. Use sparingly for accents, icons, highlights, key numbers and short decorative rules.
+- White: #FFFFFF. Use for clean content surfaces and text on Navy.
+- Light background: #F7F8FA. Use as a neutral application background.
+- Border: #D9DEE7. Use for restrained dividers, fields and card borders.
+- Primary text: #001641.
+- Secondary text: #5B6472.
+
+Colour accessibility
+- Use white text on Navy for primary actions. This has strong contrast.
+- Do not use white text on Rust for ordinary-sized text.
+- Do not use Rust for small body text on white.
+- Rust may be used for large display numbers, icons, borders and non-text accents.
+- Never introduce random blues, oranges, gradients or rainbow palettes.
+- Functional colours may be used only where meaning requires them, such as success, warning or error feedback. Always pair colour with an icon or written label.
+
+Typography
+- Preferred brand font: Sinkin Sans.
+- Main headings: Sinkin Sans 700 Bold.
+- Other headings: Sinkin Sans 500 Medium.
+- Body: Sinkin Sans 400 Regular.
+- Safe fallback stack: "Sinkin Sans", Verdana, Geneva, sans-serif.
+- Do not invent or embed Sinkin Sans font files. Use the fallback when licensed font files have not been supplied.
+- Use clear type hierarchy and comfortable line spacing.
+- Avoid decorative, handwritten or condensed fonts.
+
+Logo use
+- Primary logo: use only on white or very light backgrounds.
+- Reversed logo: use on Navy, dark colours or dark photographs.
+- Greyscale logo: use on white when colour is unavailable.
+- White logo: use on photographs where Rust would clash.
+- Never stretch, recolour, crop, distort, redraw or add effects to the logo.
+- Preserve the logo's aspect ratio and provide clear space around it.
+- Use the actual uploaded logo asset. Do not create a text approximation.
+
+Layout and visual system
+- Use a clean, modern and practical interface with generous whitespace.
+- Use a restrained 8px spacing system.
+- Use a maximum content width of approximately 1200px for desktop applications.
+- Use 10px corner radii for cards, fields and buttons unless an existing product pattern requires otherwise.
+- Use subtle borders and very light shadows. Avoid glassmorphism, glossy effects and heavy drop shadows.
+- Use white cards on a light neutral background.
+- Use Navy to anchor navigation and important page structure.
+- Use Rust as a small visual signal, not as a wall of colour.
+- Keep animation subtle and purposeful. Respect reduced-motion preferences.
+- Design mobile-first and ensure layouts work at 320px width.
+
+Component rules
+- Primary button: Navy background, white text, clear focus ring.
+- Secondary button: white background, Navy text and Navy border.
+- Accent or destructive action: do not rely on Rust alone to communicate meaning.
+- Inputs: visible labels above fields, clear help and error text, 44px minimum touch target.
+- Cards: white background, restrained border, clear heading and one obvious purpose.
+- Tables: Navy header text or Navy header row, subtle dividers, right-align financial values.
+- Financial amounts: use NZD and format as $12,345.67 unless the project specifies otherwise.
+- Dates: use New Zealand format, for example 26 August 2026 or 26/08/2026.
+- Empty states: explain what is missing and give one useful next action.
+
+Accessibility and quality
+- Aim for WCAG 2.2 AA.
+- Every form control must have a visible label.
+- All interactive elements must work with a keyboard and have a visible focus state.
+- Do not use colour as the only way to communicate status.
+- Add loading, empty, success and error states for data-driven features.
+- Check contrast, mobile layout and error handling before publishing.
+- Preserve working functionality when making visual changes.
+- Make one meaningful change at a time and verify it before continuing.
+
+Technical defaults
+- Use TypeScript with strict typing.
+- Prefer reusable, accessible components.
+- Keep brand tokens centralised rather than repeating colour values throughout the code.
+- Use CSS variables or a shared Tailwind theme for colours, spacing and typography.
+- Keep business logic separate from display components.
+- Never place secrets or private credentials in frontend code.
+- For financial or personal data, plan authentication, permissions, audit history, data retention and backups before building.
+
