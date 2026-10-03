@@ -67,8 +67,18 @@ h3 {
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
-  outline: 3px solid var(--cg-focus);
+  /* White inner ring and Navy outer ring stay visible on light and dark surfaces. */
+  box-shadow: 0 0 0 2px var(--cg-white);
+  outline: 3px solid var(--cg-navy);
   outline-offset: 2px;
+}
+
+.cg-button-primary:disabled,
+.cg-button-secondary:disabled {
+  color: var(--cg-text-muted);
+  background: var(--cg-background);
+  border-color: var(--cg-border);
+  cursor: default;
 }
 
 .cg-card {

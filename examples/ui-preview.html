@@ -10,7 +10,7 @@
     header { background: var(--cg-navy); padding: 18px 24px; }
     header img { display: block; width: 220px; max-width: 55vw; }
     main { width: min(calc(100% - 32px), var(--cg-content-width)); margin: 0 auto; padding: 56px 0 72px; }
-    .eyebrow { margin: 0 0 10px; color: var(--cg-rust); font-weight: 700; }
+    .eyebrow { margin: 0 0 10px; color: var(--cg-navy); font-weight: 700; }
     h1 { max-width: 720px; margin: 0; font-size: clamp(2rem, 6vw, 4.5rem); letter-spacing: -0.045em; }
     .intro { max-width: 660px; margin: 20px 0 32px; color: var(--cg-text-muted); font-size: 1.15rem; }
     .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 48px; }
@@ -18,7 +18,7 @@
     .metric { margin: 4px 0 6px; color: var(--cg-rust); font-size: 2.4rem; font-weight: 700; }
     .muted { color: var(--cg-text-muted); }
     label { display: block; margin-bottom: 8px; font-weight: 700; }
-    input { width: 100%; min-height: 44px; margin-bottom: 18px; padding: 10px 12px; color: var(--cg-text); background: white; border: 1px solid var(--cg-border); border-radius: var(--cg-radius-sm); font: inherit; }
+    input { width: 100%; min-height: 44px; margin-bottom: 18px; padding: 10px 12px; color: var(--cg-text); background: var(--cg-white); border: 1px solid var(--cg-text-muted); border-radius: var(--cg-radius-sm); font: inherit; }
     .rule { width: 72px; height: 5px; margin: 26px 0; background: var(--cg-rust); border-radius: 5px; }
     @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } main { padding-top: 36px; } }
   </style>
@@ -31,27 +31,34 @@
     <p class="eyebrow">Not your usual accountants</p>
     <h1>See what this process is really costing.</h1>
     <div class="rule"></div>
-    <p class="intro">Put in the time your team spends on repetitive work. We will turn it into an annual cost and show where the useful savings might be.</p>
+    <p id="preview-note"><strong>Static design example.</strong> The fields are read-only, the buttons are disabled and the figures are illustrative. This page does not calculate savings.</p>
+    <p class="intro">This example shows how a calculator could present the time your team spends on repetitive work and the value of time saved.</p>
     <div class="actions">
-      <button class="cg-button-primary">Calculate savings</button>
-      <button class="cg-button-secondary">See how it works</button>
+      <button type="button" class="cg-button-primary" disabled aria-describedby="preview-note">Calculate savings</button>
+      <button type="button" class="cg-button-secondary" disabled aria-describedby="preview-note">See how it works</button>
     </div>
     <section class="grid">
       <article class="cg-card">
         <h2>Current process</h2>
         <label for="process">Process name</label>
-        <input id="process" value="Entering supplier invoices" readonly>
+        <input id="process" value="Entering supplier invoices" readonly aria-describedby="preview-note">
         <label for="minutes">Minutes each time</label>
-        <input id="minutes" value="12" readonly>
+        <input id="minutes" value="12" readonly aria-describedby="preview-note">
         <label for="frequency">Times each week</label>
-        <input id="frequency" value="35" readonly>
+        <input id="frequency" value="35" readonly aria-describedby="preview-note">
       </article>
       <article class="cg-card">
-        <p class="muted">Potential annual saving</p>
+        <p class="muted">Illustrative annual value of time saved (NZD)</p>
         <p class="metric">$18,240</p>
-        <p>That could free up about 304 staff hours each year.</p>
+        <p>In this example, 304 staff hours are freed up each year.</p>
         <hr style="border:0;border-top:1px solid var(--cg-border);margin:24px 0">
-        <p class="muted">Review the assumptions before using this figure in a business decision.</p>
+        <h2>Example assumptions</h2>
+        <ul>
+          <li><strong>Current annual hours:</strong> 364 (12 minutes &times; 35 times a week &times; 52 weeks &divide; 60).</li>
+          <li><strong>Assumed hours saved:</strong> 304 a year (364 current &minus; 60 after improvement).</li>
+          <li><strong>Hourly cost:</strong> NZD $60, giving an annual value of NZD $18,240 (304 &times; $60).</li>
+        </ul>
+        <p class="muted">Illustrative figures only. Setup and ongoing software costs are excluded. Time freed up does not automatically reduce cash costs.</p>
       </article>
     </section>
   </main>
